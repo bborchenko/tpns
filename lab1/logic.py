@@ -168,8 +168,8 @@ class Logic:
                         self.data.drop(index=j, inplace=True)
                     else:
                         self.data[i][j] = float('nan')
-                        if tab['% пропусков'][i] < 30:
-                            self.data[i][j] = tab['Медиана'][i]
+                        # if tab['% пропусков'][i] < 30:
+                           # self.data[i][j] = tab['Медиана'][i]
 
         return self.data.reset_index(drop=True)
 
